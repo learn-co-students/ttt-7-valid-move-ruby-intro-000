@@ -8,7 +8,7 @@
 
 ## Overview
 
-In our previous Tic Tac Toe lab, we build a method, `#position_taken?`, that checks to see if the user's submitted position is free or already filled with a token. This is a type of **validation**. Our `#position_taken?` method protects our game from breaking when the use (accidentally or otherwise) submits a position that isn't available.
+In our previous Tic Tac Toe lab, we built a method, `#position_taken?`, that checks to see if the user's submitted position is free or already filled with a token. This is a type of **validation**. Our `#position_taken?` method protects our game from breaking when the user (accidentally or otherwise) submits a position that isn't available.
 
 Our validation is still incomplete however. What if a user submits a position that isn't even on the board? A more complete validation might look something like this:
 
@@ -24,7 +24,7 @@ In this lab, you'll build a method `valid_move?` that accepts a board and a posi
 
 We already have a method, `#position_taken?` that handles the second part of our validation procedure. Consequently, we can call that method *inside* of our `#valid_move?` method.
 
-The `#position_taken?` method can thus be referred to as a **helper method**––a method that handle a discrete unit of behavior and is used inside of other methods to carry out a larger task.
+The `#position_taken?` method can thus be referred to as a **helper method**––a method that handles a discrete unit of behavior and is used inside of other methods to carry out a larger task.
 
 The `#position_taken?` method can be used directly in a conditional expression, for example:
 
@@ -51,3 +51,5 @@ This lab is test-driven, so run the test suite and use the output to help you so
 * There are two conditions that need to be met in order for this method to return `true`––that the position is on the board and that the position is not taken. Think about how to construct a method that must check two conditions. Can you use two `if` statements? What about a boolean operator like `&&`?
 
 * Think back to our lessons on the concept of truthiness. Both `false` and `nil` are considered to be "falsey". So, either a `false` or `nil` return value for an invalid move will suffice.
+
+<a href='https://learn.co/lessons/ttt-7-valid-move' data-visibility='hidden'>View this lesson on Learn.co</a>
