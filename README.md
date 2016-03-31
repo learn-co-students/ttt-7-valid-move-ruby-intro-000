@@ -52,4 +52,4 @@ This lab is test-driven, so run the test suite and use the output to help you so
 
 * Think back to our lessons on the concept of truthiness. Both `false` and `nil` are considered to be "falsey". So, either a `false` or `nil` return value for an invalid move will suffice.
 
-<a href='https://learn.co/lessons/ttt-7-valid-move' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/ttt-7-valid-move' title='Validating Input Tic Tac Toe'>Validating Input Tic Tac Toe</a> on Learn.co and start learning to code for free.</p>
