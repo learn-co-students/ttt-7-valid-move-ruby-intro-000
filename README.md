@@ -13,7 +13,7 @@ In our previous Tic Tac Toe lab, we built a method, `#position_taken?`, that che
 Our validation is still incomplete however. What if a user submits a position that isn't even on the board? A more complete validation might look something like this:
 
 1. You must move to a position within the tic tac toe board.
-2. The position must be vacant and not currently taken by a player.
+2. The position must be vacant, not currently taken by a player.
 
 In this lab, you'll build a method `valid_move?` that accepts a board and a position to check and returns `true` if the move is valid and `false` or `nil` if not. A valid move means that the submitted position is:
 
@@ -42,7 +42,7 @@ end
 
 This lab is test-driven, so run the test suite and use the output to help you solve this one. Here are a few things to keep in mind:
 
-* Arrays are indexed starting at 0. A user playing your game is unlikely to know that. When a user types in that they'd like to fill position 1, they *really* mean that they'd like to fill the board array at the index of `0`. You'll have to account for this in your method.
+* Arrays are indexed starting at 0 and a user playing your game is unlikely to know that. When a user types in that they'd like to fill position 1, they *really* mean that they'd like to fill the board array at the index of `0`. You'll have to account for this in your method.
 
 * The valid positions on the board, from the user's point of view, are 1-9. If the user inputs a number not included in that range, their input is invalid. There are a few different ways to check to see if a number is included in a range. Look up the [`#between?`](http://ruby-doc.org/core-2.2.3/Comparable.html#method-i-between-3F) method for starters.
 
