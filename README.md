@@ -22,7 +22,7 @@ In this lab, you'll build a method `valid_move?` that accepts a board and a posi
 
 ## Helper Methods
 
-We already have a method, `#position_taken?` that handles the second part of our validation procedure. Consequently, we can call that method *inside* of our `#valid_move?` method.
+We've already defined a method, `#position_taken?` that handles the second part of our validation procedure (You'll have to re-define it in this lab or copy over the code you've already written). Consequently, we can call that method *inside* of our `#valid_move?` method.
 
 The `#position_taken?` method can thus be referred to as a **helper method**––a method that handles a discrete unit of behavior and is used inside of other methods to carry out a larger task.
 
@@ -52,4 +52,4 @@ This lab is test-driven, so run the test suite and use the output to help you so
 
 * Think back to our lessons on the concept of truthiness. Both `false` and `nil` are considered to be "falsey". So, either a `false` or `nil` return value for an invalid move will suffice.
 
-<a href='https://learn.co/lessons/ttt-7-valid-move' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/ttt-7-valid-move' title='Validating Input Tic Tac Toe'>Validating Input Tic Tac Toe</a> on Learn.co and start learning to code for free.</p>
