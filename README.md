@@ -15,7 +15,7 @@ Our validation is still incomplete however. What if a user submits a position th
 1. You must move to a position within the tic tac toe board.
 2. The position must be vacant, not currently taken by a player.
 
-In this lab, you'll build a method `valid_move?` that accepts a board and a position to check and returns `true` if the move is valid and `false` or `nil` if not. A valid move means that the submitted position is:
+In this lab, you'll build a method `valid_move?` that accepts a board and an index to check and returns `true` if the move is valid and `false` or `nil` if not. A valid move means that the submitted position is:
 
 1. Present on the game board.
 2. Not already filled with a token.
@@ -44,9 +44,7 @@ This lab is test-driven, so run the test suite and use the output to help you so
 
 * Arrays are indexed starting at 0 and a user playing your game is unlikely to know that. When a user types in that they'd like to fill position 1, they *really* mean that they'd like to fill the board array at the index of `0`. You'll have to account for this in your method.
 
-* The valid positions on the board, from the user's point of view, are 1-9. If the user inputs a number not included in that range, their input is invalid. There are a few different ways to check to see if a number is included in a range. Look up the [`#between?`](http://ruby-doc.org/core-2.2.3/Comparable.html#method-i-between-3F) method for starters.
-
-* Remember that the `#gets` method captures the user's input to the terminal and returns it to our Ruby program as a string. We can't ask Ruby to tell us whether a string that contains the number 5, `"5"`, is between the numbers 1 and 9. You'll have to convert the position string into a number first. Check out the [`#to_i`](http://ruby-doc.org/core-2.0.0/String.html#method-i-to_i) method.
+* The valid positions on the board, from the user's point of view, are 1-9, but we'll be checking to see if we have a number between 0-8 because we'll be looking at the array index. If the user inputs a number not included in that range, their input is invalid. There are a few different ways to check to see if a number is included in a range. Look up the [`#between?`](http://ruby-doc.org/core-2.2.3/Comparable.html#method-i-between-3F) method for starters.
 
 * There are two conditions that need to be met in order for this method to return `true`––that the position is on the board and that the position is not taken. Think about how to construct a method that must check two conditions. Can you use two `if` statements? What about a boolean operator like `&&`?
 
