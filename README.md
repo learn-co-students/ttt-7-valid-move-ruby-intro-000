@@ -31,9 +31,9 @@ The `#position_taken?` method can be used directly in a conditional expression, 
 ```ruby
 def some_new_fabulous_method
 	if position_taken?
-		do some stuff
+		execute something
 	else
-		do some other stuff
+		execute something else
 	end
 end
 ```
