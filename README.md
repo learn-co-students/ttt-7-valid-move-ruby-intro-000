@@ -22,7 +22,7 @@ In this lab, you'll build a method `valid_move?` that accepts a board and an ind
 
 ## Helper Methods
 
-We already have a method, `#position_taken?` that handles the second part of our validation procedure. Consequently, we can call that method *inside* of our `#valid_move?` method.
+We've already defined a method, `#position_taken?` that handles the second part of our validation procedure (You'll have to re-define it in this lab or copy over the code you've already written). Consequently, we can call that method *inside* of our `#valid_move?` method.
 
 The `#position_taken?` method can thus be referred to as a **helper method**––a method that handles a discrete unit of behavior and is used inside of other methods to carry out a larger task.
 
@@ -31,9 +31,9 @@ The `#position_taken?` method can be used directly in a conditional expression, 
 ```ruby
 def some_new_fabulous_method
 	if position_taken?
-		do some stuff
+		execute something
 	else
-		do some other stuff
+		execute something else
 	end
 end
 ```
