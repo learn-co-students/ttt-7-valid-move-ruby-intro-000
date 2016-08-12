@@ -21,10 +21,4 @@ describe './lib/valid_move.rb' do
 
     expect(valid_move?(board, index)).to be_falsey
   end
-
-  it "says hello" do
-    board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
-    index = 4
-    expect (valid_move?(board,index)).to output("true").to_stdout
-  end
 end
