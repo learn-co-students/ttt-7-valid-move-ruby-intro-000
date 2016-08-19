@@ -3,7 +3,7 @@ def valid_move? (board, index)
 
   isTaken = position_taken?(board , index)
 
-  if index >= 0 && index <=8
+  if index.between?(0, 8)
     if isTaken
       return false
     else
@@ -22,7 +22,3 @@ def position_taken? (board, index)
     return true
   end
 end
-
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-index = 100
-puts valid_move?(board, index)
