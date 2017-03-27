@@ -4,7 +4,7 @@ describe './lib/valid_move.rb' do
 
   it 'returns true for a valid position on an empty board' do
     board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-    index = 0
+    index = 4
     expect(valid_move?(board, index)).to be_truthy
   end
 
