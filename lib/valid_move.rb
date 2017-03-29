@@ -1,17 +1,21 @@
-def valid_move?(board, position)
-  move = position.to_i
-  test = move-1
-  if position_taken?(board, test) == false && test.between?(0, 8)
-    true
-  else
+def position_taken? (board,index)
+
+  if board[index]==" " || board[index]==""
     false
+  elsif board[index] == nil
+    false
+  elsif board[index] == "X" || board[index]=="O"
+    true
   end
+
 end
 
-def position_taken?(board, position)
-  if board[position] == ” ” || board[position] == “” || board[position] == nil
-    false
-  else board[position] == “X” || board[position] == “O”
+def valid_move?(board,index)
+
+  if position_taken?(board,index)==true
+        false
+  elsif index.between?(-1,8) == true && position_taken?(board,index)==false
     true
   end
+
 end
