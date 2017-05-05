@@ -3,7 +3,7 @@ board = [" "," "," "," "," "," "," "," "," "]
 
 def valid_move?(board, index)
   index = index.to_i
-    if index <= 9 && position_taken?(board, index) == false
+    if (index <= 9) && (position_taken?(board, index) == false)
       true
 #    elsif position_taken?(board, index) == true
 #      false
