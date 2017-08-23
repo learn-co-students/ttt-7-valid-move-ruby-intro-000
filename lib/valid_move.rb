@@ -1,7 +1,6 @@
 require 'pry'
 # code your #valid_move? method here
 def valid_move?(board, index)
-positions = 0..8
   if index >= 0 && index <= 8 && position_taken?(board, index) == false
     return true
   else
@@ -17,16 +16,3 @@ def position_taken?(board, index)
     return true
   end
 end
-
-
-# position_taken? == false
-#  return false
-#
-#elsif board[0..8] ==
-#  return true
-#elsif position_taken? == true
-#  return false
-#else index < 0 || index > 8
-#  return false
-#elsif position_taken? == true
-#
