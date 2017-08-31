@@ -1,4 +1,19 @@
 # code your #valid_move? method here
+def valid_move?(array, index)
+
+x = position_taken?(array, index)
+if (x == false && index > -1 && index < 9)
+  return true
+end
 
 
-# re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
+end
+
+def position_taken?(array, index)
+  if (array[index] == " " || array[index] == "" || array[index] == nil)
+    x = false
+  elsif (array[index] == "X" || array[index] == "O")
+    x = true
+  end
+
+end
