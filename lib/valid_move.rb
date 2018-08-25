@@ -1,4 +1,11 @@
-# code your #valid_move? method here
+def valid_move?(board, pos)
+ return true while pos < 9 && position_taken?(board, pos) == false
+ return false
+end
 
-
-# re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
+def position_taken?(board, pos)
+  if board[pos] == " " || board[pos] == "" || board[pos] == nil
+    return false
+  end
+  return true
+end
