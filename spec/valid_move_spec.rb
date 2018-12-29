@@ -26,4 +26,11 @@ describe './lib/valid_move.rb' do
 
     expect(valid_move?(board, index)).to be_falsey
   end
+
+  it 'returns false for a not integer' do
+    board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+    index = 5.5
+
+    expect(valid_move?(board, index)).to be_falsey
+  end
 end
