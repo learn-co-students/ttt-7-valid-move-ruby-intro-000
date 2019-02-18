@@ -14,7 +14,7 @@ end
 
 
   def on_board?(index)
-    if index.between?(0, 8) == true
+    if index.between?(0, 8) 
       return true
     else
       return false
@@ -26,6 +26,4 @@ end
   else
     return false
   end
-
-
 end
