@@ -2,3 +2,11 @@
 
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
+
+def valid_move?(board, index)
+  if board[index] == "" || board[index] == " "
+    return TRUE
+  elsif board[index] == nil
+    return FALSE
+  end
+end
