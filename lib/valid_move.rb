@@ -1,17 +1,20 @@
+require "pry"
 # code your #valid_move? method here
 def valid_move?(board, index)
-  if position_taken? == position_taken?.between?(1,8)
+  # binding.pry
+  if !position_taken?(board, index) && index.between?(0,8)
     true
-  else false
+  else
+    false
   end
 end
 
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 def position_taken?(board, index)
-  if board[0] == " " || board[0] == "" || board[0] == nil
+  if board[index] == " " || board[index] == "" || board[index] == nil
     false
-  else board[0] == "X" || board[0] == "O"
+   else
     true
   end
 end
