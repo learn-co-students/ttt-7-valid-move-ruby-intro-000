@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/board.rb'
+require_relative '../lib/valid_move.rb'
+
+puts "Welcome to Tic Tac Toe!"
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+loop do
+puts "Where would you like to go?"
+user_input = gets.strip
+input_to_index(user_input)
+index = user_input.to_i - 1
+position_taken?(board, index)
+move(board, index)
+display_board(board)
+end
