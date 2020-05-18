@@ -27,7 +27,7 @@ The `#position_taken?` method can be used directly in a conditional expression, 
 def some_new_fabulous_method
 	if position_taken?
 		execute something
-	else
+	else 
 		execute something else
 	end
 end
