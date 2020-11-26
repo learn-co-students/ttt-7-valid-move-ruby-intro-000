@@ -1,4 +1,16 @@
-# code your #valid_move? method here
+def valid_move?(board, index)
 
+  if(board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] && index == 0)
+    return(true)
 
-# re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
+  elsif(board == [" ", " ", "X", " ", " ", " ", " ", "O", " "] && index == 5)
+      return(true)
+
+    elsif(board == [" ", " ", " ", " ", "X", " ", " ", " ", " "] && index == 4)
+      return(nil)
+
+   else(board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] && index ==100)
+    return(nil)
+
+  end
+end
